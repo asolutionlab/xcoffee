@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X · Coffee</title>
+</head>
+
+<body>
+    <a href="homepage.html"><img class="breathing-light" src="xcoffee.png" /></a>
+    <img src="d&d.png" />
+</body>
+<style>
+    body {
+        position: relative;
+        background: url("7.png");
+        background-size: cover;
+        min-height: 100vh;
+    }
+
+    img {
+        width: 5%;
+        position: relative;
+        left: 90%;
+        text-align: center;
+    }
+
+    .breathing-light {
+        width: 40%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        animation: breathe 10s infinite;
+    }
+
+    @keyframes breathe {
+        0% {
+            opacity: .25;
+        }
+
+        25% {
+            opacity: .5;
+        }
+
+        50% {
+            opacity: 1;
+        }
+
+        75% {
+            opacity: .5;
+        }
+
+        100% {
+            opacity: .25;
+        }
+    }
+
+</style>
+
+</html>
