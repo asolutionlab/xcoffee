@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X · Coffee</title>
+</head>
+
+<body>
+    <div class="breathing-light">
+        <div><img class="logo" src="d&d.png" /></div>
+        <div>
+            <a href="homepage.html"><img class="animal" src="xcoffee.png" /></a>
+        </div>
+    </div>
+</body>
+<style>
+    body {
+        position: relative;
+        background: linear-gradient(to right, #0c0223, #0a021c, #080216, #0a021c, #0c0223);
+        min-height: 100vh;
+    }
+    .breathing-light {
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+
+        .logo{
+            width: 5%;
+        }
+        .animal {
+            width: 50%;
+            animation: breathe 10s infinite;
+        }
+    }
+
+    @keyframes breathe {
+        0% {
+            opacity: .25;
+        }
+
+        25% {
+            opacity: .5;
+        }
+
+        50% {
+            opacity: 1;
+        }
+
+        75% {
+            opacity: .5;
+        }
+
+        100% {
+            opacity: .25;
+        }
+    }
+
+</style>
+
+</html>
