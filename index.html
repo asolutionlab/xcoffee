@@ -21,6 +21,13 @@
         background: linear-gradient(to right, #0c0223, #0a021c, #080216, #0a021c, #0c0223);
         min-height: 100vh;
     }
+    .logo {
+        width: 5%;
+    }
+    .animal {
+        width: 50%;
+        animation: breathe 10s infinite;
+    }
     .breathing-light {
         position: absolute;
         top: 35%;
@@ -28,32 +35,20 @@
         transform: translate(-50%, -50%);
         text-align: center;
 
-        .logo{
-            width: 5%;
-        }
-        .animal {
-            width: 50%;
-            animation: breathe 10s infinite;
-        }
     }
-
     @keyframes breathe {
         0% {
             opacity: .25;
         }
-
         25% {
             opacity: .5;
         }
-
         50% {
             opacity: 1;
         }
-
         75% {
             opacity: .5;
         }
-
         100% {
             opacity: .25;
         }
